@@ -6,7 +6,7 @@ import { StateProvider } from './context/StateProvider'
 import { ReactQueryA } from './components/ReactQueryA'
 import { ReactQueryB } from './components/ReactQueryB'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
-// import { ReactQueryDevtools } from 'react-query-devtools'
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -33,6 +33,6 @@ export const App = () => (
         </Layout>
       </StateProvider>
     </BrowserRouter>
-    {/* <ReactQueryDevtools initialIsOpen={false} /> */}
+    <ReactQueryDevtools initialIsOpen={true} />
   </QueryClientProvider>
 )

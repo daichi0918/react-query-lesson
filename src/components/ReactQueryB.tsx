@@ -8,7 +8,7 @@ export const ReactQueryB: FC = () => {
   const navigate = useNavigate()
   const queryClient = useQueryClient() // ✅ グローバルな QueryClient を取得
   const data = queryClient.getQueryData<Task[]>(['tasks']) // ← queryKey は配列！
-  console.log('rendered ReactQueryB')
+  console.log('rendered ReactQueryB.')
 
   return (
     <>
